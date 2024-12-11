@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
   const [isLoading,setIsLoading]=useState(true);
   const authorizationToken=`Bearer ${token}`;
   //for API
-  const API=import.meta.env.VITE_APP_URI_API;
+  const API='https://voting-app-mern-3.onrender.com';
 
 
     //function to stored the token in local storage
