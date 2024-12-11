@@ -13,7 +13,7 @@ const cors=require("cors");
 
 //handle cors 
 const corsOptions={
-    origin:"https://magnificent-toffee-c1af61.netlify.app",
+    origin:"http://localhost:5173",
     method:"GET,POST,PUT,DELETE,PATCH,HEAD",
     credentials:true,
 };
