@@ -13,7 +13,7 @@ const cors=require("cors");
 
 //handle cors 
 const corsOptions={
-    origin:"http://localhost:5173",
+    origin:"https://voting-app-mern-frontend.onrender.com",
     method:"GET,POST,PUT,DELETE,PATCH,HEAD",
     credentials:true,
 };
