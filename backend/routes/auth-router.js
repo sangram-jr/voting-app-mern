@@ -20,7 +20,7 @@ router.route("/").get((req,res)=>{
 */
 
 //home route
-router.route("/").get(authController.home);
+//router.route("/").get(authController.home);
 
 
 /*
