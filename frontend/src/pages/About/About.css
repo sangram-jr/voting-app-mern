@@ -1,0 +1,156 @@
+/* General Styling */
+/* about page styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* About Hero Section */
+.about-hero {
+  background: linear-gradient(to right, #000, #111); /* Gradient background */
+  color: #fff; /* White text */
+  padding: 100px 20px; /* Adjusted padding to prevent overlap with navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two-column layout */
+  gap: 50px;
+  align-items: center;
+  justify-items: center;
+  text-align: left;
+}
+
+/* About Content */
+.about-content {
+  max-width: 600px;
+}
+
+.about-welcome {
+  font-size: 2.7rem; /* Larger font size */
+  color: white;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.about-title {
+  font-size: 3rem; /* Prominent title */
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.about-text {
+  font-size: 1.2rem; /* Improved readability */
+  color: #ccc;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify; /* Equal spacing across text */
+}
+
+.about-btn-group {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px; /* Spacing between buttons */
+  flex-wrap: wrap; /* Ensures responsiveness */
+  justify-content: flex-start; /* Align buttons to the left */
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 20px; /* Same size for all buttons */
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px; /* Ensures buttons have equal width */
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: tomato;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #e6453d;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: tomato;
+  border: 1px solid tomato;
+}
+
+.btn-secondary:hover {
+  background-color: #f1f1f1;
+  color: #e6453d;
+  transform: scale(1.05);
+}
+
+/* About Image */
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255, 99, 71, 0.3); /* Subtle shadow effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr; /* Single-column layout */
+    text-align: center;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-btn-group {
+    justify-content: center;
+  }
+
+  .about-text {
+    font-size: 1.1rem; /* Adjusted for smaller screens */
+    line-height: 1.6;
+  }
+
+  .responsive-img {
+    max-width: 90%; /* Adjust image size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .btn {
+    min-width: 100px; /* Ensure smaller buttons for smaller screens */
+  }
+}
+
+  

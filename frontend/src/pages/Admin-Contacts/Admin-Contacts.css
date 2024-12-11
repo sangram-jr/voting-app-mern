@@ -1,0 +1,112 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+  }
+  
+  .contact-list {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .list-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #bbb; /* Tomato color for the title */
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  
+  /* Table Header */
+  .list-table-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr; /* Columns for Name, Email, Message, and Delete */
+    gap: 10px;
+    padding: 15px;
+    background-color: #222; /* Slightly lighter black for header */
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Table Rows */
+  .list-table-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr; /* Columns for Name, Email, Message, and Delete */
+    gap: 10px;
+    padding: 15px;
+    background-color: #1c1c1c; /* Dark row background */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Add hover animation */
+    align-items: center; /* Center items vertically */
+  }
+  
+  /* Hover Effect for Rows */
+  .list-table-row:hover {
+    transform: translateY(-5px);
+    background-color: #333; /* Slightly lighter on hover */
+  }
+  
+  /* Table Cell */
+  .table-cell {
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  /* Button Styling */
+  .table-delete-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem; /* Increase the icon size */
+    cursor: pointer; /* Add a pointer cursor */
+    color: red; /* Optional: Tomato color for the delete icon */
+    transition: transform 0.2s ease, color 0.2s ease; /* Smooth hover effects */
+  }
+  
+  .table-delete-btn:hover {
+    transform: scale(1.2); /* Slight zoom-in effect on hover */
+    color: #e6453d; /* Darker tomato color on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .list-table-header,
+    .list-table-row {
+      grid-template-columns: 1fr; /* Stack columns vertically */
+      text-align: left;
+      padding: 10px;
+    }
+  
+    .table-cell {
+      margin-bottom: 10px;
+    }
+  
+    button {
+      width: 100%; /* Full-width button for small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .list-heading {
+      font-size: 1.8rem;
+    }
+  
+    button {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  }
+  

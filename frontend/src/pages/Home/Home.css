@@ -1,0 +1,326 @@
+/* General Styles https://t3.ftcdn.net/jpg/04/24/65/50/240_F_424655033_Rtp3uEgG7zglNV2yW2eEr7CEkq7KWHko.jpg */
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url("https://t3.ftcdn.net/jpg/04/24/65/50/240_F_424655033_Rtp3uEgG7zglNV2yW2eEr7CEkq7KWHko.jpg"); /* Replace with your voting-related image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero-content {
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    & .btn-primary{
+      width: 100%;
+    }
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: darkgray;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in-out;
+    color: #ccc;
+  }
+  
+  .btn-primary {
+    background-color: tomato;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: pulse 3s infinite;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e6453d;
+    transform: scale(1.05);
+  }
+  
+  /* Features and How It Works */
+  .features-grid,
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 40px;
+  }
+  
+  .feature-card,
+  .step-card {
+    background: #333; /* Updated background color */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 17rem;
+  }
+  
+  .feature-card:hover,
+  .step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(255, 99, 71, 0.6);
+  }
+  
+  .feature-card i,
+  .step-card i {
+    font-size: 3.5rem;
+    color: tomato;
+    margin-bottom: 20px;
+  }
+  
+  .feature-card h3,
+  .step-card h3 {
+    margin-bottom: 15px;
+    color: lightgrey;
+  }
+  
+  .feature-card p,
+  .step-card p {
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Call-to-Action Section */
+  .cta {
+    /*background: linear-gradient(135deg, tomato, #ff5f6d);*/
+    background: linear-gradient(135deg, #bbb);
+    padding: 50px 20px;
+  }
+  
+  .cta h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .btn-secondary {
+    background-color: #fff;
+    color: tomato;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 65%;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #f1f1f1;
+    color: #e6453d;
+  }
+  .section-title{
+    font: 2rem;
+    margin-bottom: 30px;
+    color: #e6453d;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .features-grid,
+    .steps-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .features-grid,
+    .steps-grid {
+      grid-template-columns: 1fr; /* 1 card per row on small screens */
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero h2 {
+      font-size: 1.5rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+
+  /* about page styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* About Hero Section */
+
+.about-hero {
+  background: linear-gradient(to right, #000, #111); /* Gradient background */
+  color: #fff; /* White text */
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: -200px;
+  margin-bottom: -140px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* About Content */
+.about-content {
+  max-width: 600px;
+}
+
+.about-welcome {
+  font-size: 2.7rem; /* Larger font size */
+  color:white;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.about-title {
+  font-size: 3rem; /* Prominent title */
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.about-text {
+  font-size: 1.2rem; /* Improved readability */
+  color: #ccc;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+  margin-top: 35px; /* Equal spacing across text */
+}
+
+.about-btn-group {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px; /* Spacing between buttons */
+}
+
+/* Buttons */
+.btn {
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: tomato;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #e6453d;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: tomato;
+  border: 1px solid tomato;
+}
+
+.btn-secondary:hover {
+  background-color: #f1f1f1;
+  color: #e6453d;
+  transform: scale(1.05);
+}
+
+/* About Image */
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255, 99, 71, 0.3); /* Subtle shadow effect */
+  margin-bottom: 35px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr; /* Single-column layout */
+    text-align: center;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-btn-group {
+    justify-content: center;
+  }
+
+  .about-text {
+    font-size: 1.1rem; /* Adjusted for smaller screens */
+    line-height: 1.6;
+  }
+}
+
+  

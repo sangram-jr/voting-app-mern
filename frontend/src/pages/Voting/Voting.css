@@ -1,0 +1,144 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  box-sizing: border-box;
+}
+
+/* Voting Container */
+.voting-container {
+  max-width: 1200px;
+  margin: 100px auto; /* Add space to prevent title from overlapping with navbar */
+  padding: 20px;
+  text-align: center;
+}
+
+.voting-title {
+  font-size: 2.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+/* Voting List */
+.voting-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Header Row */
+.list-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr; /* Logo, Candidate, Party, Action */
+  background-color: #333;
+  padding: 20px; /* Increased height */
+  border-radius: 10px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Table Row */
+.list-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr; /* Logo, Candidate, Party, Action */
+  background-color: #1c1c1c; /* Slightly lighter black for rows */
+  align-items: center;
+  gap: 10px;
+  padding: 20px; /* Increased height for rows */
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect for Row */
+.list-row:hover {
+  transform: translateY(-5px);
+  background-color: #333;
+}
+
+/* Logo Cell */
+.logo-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* List Cells */
+.list-cell {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.vote-btn {
+  padding: 12px 20px; /* Increased height and shorter length */
+  font-size: 0.85rem; /* Adjusted font size for better visibility */
+  font-weight: bold; /* Bold text for better emphasis */
+  border: none;
+  border-radius: 8px; /* Slightly rounded corners */
+  background-color: tomato; /* Grey color */
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth hover and transform effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a floating effect */
+  width: fit-content; /* Automatically adjust the width to fit the content */
+  text-align: center; /* Center-align text */
+}
+
+.vote-btn:hover {
+  background-color: #444; /* Tomato hover color */
+  color: #fff;
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(255, 99, 71, 0.4); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .vote-btn {
+    padding: 10px 18px; /* Slightly smaller size for mobile */
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .list-header,
+  .list-row {
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Equal columns for smaller screens */
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+
+  .logo-image {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .list-header,
+  .list-row {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+    text-align: left;
+    padding: 10px;
+  }
+}
+

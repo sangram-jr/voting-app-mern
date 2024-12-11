@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text for readability */
+}
+
+/* Dashboard Container */
+.dashboard {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  color: #fff; 
+  text-transform: uppercase;
+}
+
+/* Dashboard Content Layout */
+.dashboard-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+/* Left Section: Chart */
+.dashboard-chart {
+  flex: 1 1 calc(50% - 20px); /* Allow chart to resize responsively */
+  min-width: 300px;
+  background: black; /* Dark section background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dashboard-chart h2 {
+  font-size: 1.5rem;
+  color: #1235b3;
+  margin-bottom: 25px;
+  /*text-decoration: solid;*/
+  text-decoration: underline;
+}
+
+/* Right Section: Form */
+.dashboard-form {
+  flex: 1 1 calc(50% - 20px); /* Allow form to resize responsively */
+  min-width: 300px;
+  background: black; /* Dark section background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+/* Form Rows */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  background-color: #1c1c1c; /* Darker background for rows */
+  margin: 10px 0;
+  height: 70px; /* Fixed height for all rows */
+  padding: 0 10px; /* Adjust horizontal padding */
+  border-radius: 5px;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Hover animation */
+}
+
+.form-row:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  background-color: #333; /* Slightly lighter background */
+}
+
+.form-cell {
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-content {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+  }
+
+  .dashboard-chart,
+  .dashboard-form {
+    flex: 1 1 100%; /* Take full width in small screens */
+    min-width: unset;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-row {
+    grid-template-columns: 1fr; /* Stack form cells */
+  }
+
+  .form-cell {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+  

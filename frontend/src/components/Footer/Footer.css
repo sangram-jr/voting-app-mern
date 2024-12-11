@@ -1,0 +1,118 @@
+/* Footer Styling  <p>&copy; {new Date().getFullYear()} All Rights Reserved</p> */
+/* Footer Styling */
+.footer {
+    background-color: #111; /* Black background */
+    color: #fff; /* White text */
+    padding: 40px 20px;
+    border-top: 1px solid #333; /* Separate with a line */
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 40px; /* Equal spacing between columns */
+  }
+  
+  /* Footer Column */
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .footer-title {
+    font-size: 1.5rem;
+    color: tomato; /* Tomato for the titles */
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraph Styling */
+  .footer-column p {
+    font-size: 1rem;
+    color: #ccc; /* Light gray for details */
+    line-height: 1.6;
+    margin: 0; /* Remove default paragraph margin */
+  }
+  
+  /* Links Section */
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: tomato; /* Tomato color on hover */
+  }
+  
+  /* Social Section */
+  .footer-socials {
+    display: flex;
+    gap: 15px; /* Adjust spacing between social icons */
+  }
+  
+  .footer-socials a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-socials a:hover {
+    color: tomato; /* Tomato color on hover */
+    transform: scale(1.2); /* Scale effect on hover */
+  }
+  
+  /* Copyright Section */
+  .footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #333; /* Separate with a line */
+  }
+  
+  .footer-copyright p {
+    font-size: 1rem;
+    color: #bbb; /* Light gray text */
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+      gap: 30px; /* Adjust gap for medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-container {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+      gap: 20px; /* Adjust gap for small screens */
+    }
+  
+    .footer-title {
+      font-size: 1.2rem;
+    }
+  
+    .footer-column p {
+      font-size: 0.85rem;
+    }
+  
+    .footer-links a {
+      font-size: 0.85rem;
+    }
+  }
+  

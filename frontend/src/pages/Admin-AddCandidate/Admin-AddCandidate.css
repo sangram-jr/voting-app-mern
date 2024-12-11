@@ -1,0 +1,224 @@
+/* General Styling 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Black background 
+  color: #fff; /* White text for contrast 
+}
+
+.section-contact {
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Form Layout 
+.section-form {
+  background-color: #111; /* Darker background for the form
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+.update-form-heading {
+  text-align: center;
+  color: #bbb; /* Tomato color for the heading 
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #222; /* Input background color 
+  color: #fff;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: tomato; /* Tomato border on focus 
+  box-shadow: 0 0 5px tomato;
+}
+
+/* Button Styling 
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: tomato; /* Tomato button 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6453d; /* Darker tomato for hover effect 
+}
+
+/* Responsive Design 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .form-heading {
+    font-size: 1.8rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-heading {
+    font-size: 1.5rem;
+  }
+
+  .form-group input {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}*/
+
+
+.add {
+  width: 70%;
+  margin-left: max(5vw, 25px);
+  margin-top: 50px;
+  color: #6d6d6d;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Consistent spacing between sections */
+}
+
+.add form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Space between all input fields, button, and image */
+}
+
+/* Image Upload Section */
+.add-img-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between label and image */
+}
+
+.add-img-upload img {
+  width: 120px;
+  /* Retaining original image styling, no border-radius or circular shape */
+}
+
+/* Input Fields */
+.add-product-name,
+.add-product-description {
+  width: max(40%, 280px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Space between paragraph and input */
+}
+
+.add-product-name input,
+.add-product-description textarea {
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px; /* Reduced font size */
+}
+
+/* Category and Price Section */
+.add-category-price {
+  display: flex;
+  flex-wrap: wrap; /* Adjusts for smaller screens */
+  gap: 30px; /* Space between inputs in the category-price section */
+}
+
+.add-category-price select,
+.add-category-price input {
+  max-width: 120px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px; /* Reduced font size */
+}
+
+/* Button */
+.add-btn {
+  max-width: 120px;
+  border: none;
+  padding: 10px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  font-size: 14px; /* Reduced font size for the button */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #ccc; /* Slight hover effect for better interaction */
+  transform: scale(1.05);
+}
+
+/* Paragraph Styling */
+.add p {
+  font-size: 14px; /* Decreased paragraph font size */
+  margin: 0; /* Removed default margin */
+  color: #ccc; /* Lighter grey for better readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add {
+    width: 90%; /* Adjust width for smaller screens */
+    margin-left: 5%;
+  }
+
+  .add-product-name,
+  .add-product-description {
+    width: 100%;
+  }
+
+  .add-category-price select,
+  .add-category-price input {
+    max-width: 100px;
+  }
+
+  .add-btn {
+    width: 100%; /* Full-width button for smaller screens */
+  }
+}
+
+
+  
+  
+  

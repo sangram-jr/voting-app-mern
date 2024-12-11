@@ -1,0 +1,134 @@
+
+ /* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #111;
+  color: white;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 2.0rem;
+  font-weight: bold;
+  color: tomato;
+  text-decoration: none;
+}
+
+/* Menu Icon */
+.menu-icon {
+  display: none; /* Hidden by default */
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-menu.active {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  background-color: #111;
+  width: 250px;
+  height: 100%;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  z-index: 999;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  gap: 2rem; /* Spacing between items */
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: tomato;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show the menu icon */
+  }
+
+  .nav-menu {
+    display: none; /* Hide the menu initially */
+    flex-direction: column;
+  }
+
+  .nav-menu.active {
+    display: flex; /* Show the menu when active */
+  }
+
+  .nav-list {
+    flex-direction: column; /* Stack items vertically */
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 1.2rem; /* Slightly larger font for better readability */
+  }
+}
+
+/* Responsive Styles for Laptop */
+@media (max-width: 1024px) {
+  .navbar-container {
+    width: 95%; /* Increase container width slightly */
+  }
+
+  .nav-menu {
+    gap: 1.5rem; /* Adjust spacing between items */
+  }
+
+  .nav-link {
+    font-size: 1.1rem; /* Slightly larger font size */
+  }
+}
+
+  
