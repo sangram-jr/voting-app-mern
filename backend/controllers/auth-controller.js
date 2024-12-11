@@ -142,4 +142,4 @@ const user = async (req, res) => {
 
 
 
-module.exports={home,register,login,user,verifyEmail};
+module.exports={register,login,user,verifyEmail};
