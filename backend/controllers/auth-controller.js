@@ -5,16 +5,6 @@ const bcrypt=require('bcryptjs');
 
 
 
-//home logic
-const home=async(req,res)=>{
-    try {
-        res.status(200).send("Hello world 2");
-    } catch (error) {
-        console.log(error);
-        
-    }
-}
-
 
 
 // *-------------------
@@ -85,7 +75,7 @@ const login=async(req,res)=>{
 
         //cheak user is already exist or not basis on email
         const userExist=await User.findOne({email})
-        console.log(userExist);
+        //console.log(userExist);
 
         if(!userExist){
             return res.status(400).json({message:"Invalid Credential"});
